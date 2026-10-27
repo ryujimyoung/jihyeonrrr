@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="2026 디지털혁신 백서(가상)의 모든 장을 검색하고 열람합니다.">
+  <title>2026 디지털혁신 백서 | 검색·열람</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="데이터.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#list">본문으로 이동</a>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">행정안전부 · 디지털혁신과</p>
+      <h1>2026 디지털혁신 백서 <span>(가상)</span></h1>
+      <p class="intro">제목과 본문을 검색하고 장별 내용을 확인하세요.</p>
+    </div>
+  </header>
+  <main class="container">
+    <section class="search-panel" aria-label="백서 검색">
+      <label for="q">검색어</label>
+      <div class="search-row">
+        <input id="q" type="search" placeholder="예: 사업, 정보보안, 한지원" autocomplete="off" aria-controls="list">
+        <button id="clear" type="button">초기화</button>
+      </div>
+      <p id="count" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <div id="list" aria-label="장별 검색 결과"></div>
+    <noscript>백서 카드 표시와 검색을 위해 브라우저의 JavaScript를 활성화해 주세요.</noscript>
+  </main>
+  <footer class="container">가상 백서 초고 · 원문에 기록된 수치와 명칭을 그대로 제공합니다.</footer>
+</body>
+</html>
